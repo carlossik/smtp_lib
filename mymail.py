@@ -14,8 +14,8 @@ with open('mytext.txt','r') as fp:
     # me == the sender's email address
     # you == the recipient's email address
     msg['Subject'] = 'The contents of %s'
-    msg['From'] = 'carlos.attafuah@theexchangelab.com'
-    msg['To'] = 'carlossik@gmail.com'
+    msg['From'] = 'mememe@meme.com'
+    msg['To'] = 'cl@cl.com'
 
     # Send the message via our own SMTP server, but don't include the
     # envelope header.
@@ -39,8 +39,8 @@ try:
   smtp.login('carlos.attafuah@theexchangelab.com', 'Welcome123!')
 except socket.gaierror:
     print('ignoring failed address lookup')
-from_addr = "Carlos Attafuah <carlos.attafuah@theexchangelab.com>"
-to_addr = "carlos.attafuah@theexchangelab.com"
+from_addr = "Carlos Attafuah <mememe@meme.com>"
+to_addr = "cl@cl.com"
 
 subj = "hello"
 date = datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
@@ -62,7 +62,7 @@ msg = MIMEText
 #server = smtplib.SMTP('smtp.gmail.com')
 server = smtplib.SMTP('smtp.office365.com:587')
 server.starttls()
-server.login('Carlos.Attafuah@theexchangelab.com','Welcome123!')
+server.login('mememe@meme.com','test1!')
 msg['Subject'] = "msg.channel"
 msg['From'] = ('from')
 msg['To'] = ('to')
