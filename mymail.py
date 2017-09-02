@@ -36,7 +36,7 @@ smtp.set_debuglevel(debuglevel)
 try:
 
   smtp.connect('smtp.office365.com:587', 26)
-  smtp.login('carlos.attafuah@theexchangelab.com', 'Welcome123!')
+  smtp.login('carlos.attafuah@theaddreess.com', '*********')
 except socket.gaierror:
     print('ignoring failed address lookup')
 from_addr = "Carlos Attafuah <mememe@meme.com>"
